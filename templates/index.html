@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Accueil - Gestion Étudiants</title>
+</head>
+
+<body class="container mt-5">
+    <nav class="mb-4">
+        <a href="/" class="btn btn-dark">Accueil (Stats)</a>
+        <a href="/liste" class="btn btn-outline-primary">Liste des étudiants</a>
+        <a href="/ajouter" class="btn btn-outline-success">Ajouter un étudiant</a>
+    </nav>
+    <div class="jumbotron p-5 bg-light border rounded shadow-sm">
+        <h1 class="display-4">Bienvenue !</h1>
+        <p class="lead">Ceci est votre mini système de gestion d'étudiants.</p>
+        <hr class="my-4">
+        <h3>Statistiques globales :</h3>
+        <div class="alert alert-info d-inline-block">
+            Nombre total d'étudiants : <strong>{{ total }}</strong>
+        </div>
+    </div>
+</body>
+
+</html>
